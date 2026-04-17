@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100% Organic-Organic Food Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/organic_logo.jpg">
+            </div>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="category.html">Categories</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Service</a>
+            </nav>
+            <div class="header-icons">
+                <div class="cart-icon">
+                    <i class="bi bi-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-login">Login</button>
+                    <button class="btn btn-signup">Sign up</button>
+                </div>
+                <div class="mobile-toggle" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container main-container">
+            <div class="hero-text-section">
+                <p class="subtitle">100% Healthy & Tasty</p>
+                <h1 class="main-title"><span class="organic-text">ORGANIC</span> FOOD</h1>
+                <p class="hero-description">A place where help you to buy fresh grocery.Tasty and 100% healthy</p>
+                <div class="hero-cta">
+                    <button class="btn btn-order">How to Order</button>
+                    <button class="btn btn-get-sale">Get Sale</button>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="images/client.jpg" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <h3>Max Patrick</h3>
+                            <div class="star-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Made everyone feel at ease and was extremely attentive towards allergies and intolerances.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-pagination">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-section">
+                <img src="images/bowl.jpg" class="salad-image">
+                <div class="large-star-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="services">
+        <div class="container services-container">
+            <div class="service-item">
+                <i class="bi bi-truck service-icon"></i>
+                <h3>Fast Delivery</h3>
+                <p>Deliver within 30 minutes</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-fork-knife service-icon"></i>
+                <h3>Dine in</h3>
+                <p>Enjoy your food fresh and healthy</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-house-door-fill service-icon"></i>
+                <h3>Pick up</h3>
+                <p>Delivery at your doorstep</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <p class="stat-value">1975+</p>
+                <p class="stat-label">Total Products</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">2880+</p>
+                <p class="stat-label">Satisfied Clients</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">3219+</p>
+                <p class="stat-label">Project Completed</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">100%</p>
+                <p class="stat-label">Guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

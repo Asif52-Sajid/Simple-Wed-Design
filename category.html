@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100% Organic-Organic Food Category Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/organic_logo.jpg">
+            </div>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="category.html" class="active">Categories</a> <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Service</a>
+            </nav>
+            <div class="header-icons">
+                <div class="cart-icon">
+                    <i class="bi bi-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+                <div  class="search-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="auth-buttons">
+                    <!-- <button class="btn btn-login">Login</button> -->
+                    <button class="btn btn-signup">Login</button>
+                </div>
+                <div class="mobile-toggle" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container category-layout">
+            
+            <aside class="sidebar">
+               <div class="category-header" onclick="toggleCategories()">
+                  <i class="bi bi-list"></i>
+                  <h2>All departments</h2>
+                  <i class="bi bi-chevron-down ms-auto d-md-none"></i> 
+                </div>
+
+                <ul class="category-list" id="categoryList">
+                  <li><a href="#">Fresh Meat</a></li>
+                  <li><a href="#">Vegetables</a></li>
+                  <li><a href="#">Fruit & Nut Gifts</a></li>
+                  <li><a href="#">Fresh Berries</a></li>
+                  <li><a href="#">Ocean Foods</a></li>
+                  <li><a href="#">Butter & Eggs</a></li>
+                  <li><a href="#">Fastfood</a></li>
+                  <li><a href="#">Fresh Onion</a></li>
+                  <li><a href="#">Papaya & Crisps</a></li>
+                  <li><a href="#">Oatmeal</a></li>
+                  <li><a href="#">Fresh Bananas</a></li>
+                </ul>
+            </aside>
+
+            <div class="content-area">
+                
+                <div class="search-contact-bar">
+                    <div class="search-wrap">
+                        <select name="categories">
+                            <option value="all">All Categories</option>
+                        </select>
+                        <input type="text" placeholder="What do you need?">
+                        <button class="btn btn-search">SEARCH</button>
+                    </div>
+                    <div class="contact-wrap">
+                        <div class="phone-icon">
+                            <i class="bi bi-telephone-outbound"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="phone-number">+88 01846455651</span>
+                            <span class="support-text">support 24/7 time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-hero">
+                    <img src="images/organic_cover.jpg" class="hero-image">
+                    <div class="hero-text-overlay">
+                        <p class="subtitle">FRUIT FRESH</p>
+                        <h1>Vegetable 100% Organic</h1>
+                        <p class="hero-description">Free Pickup and Delivery Available</p>
+                        <button class="btn btn-shop">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="category-product-grid">
+                    <div class="cat-prod-item">
+                        <img src="images/dried_fruit.jpg">
+                        <p class="cat-prod-label">DRIED FRUIT</p>
+                    </div>
+                    <div class="cat-prod-item">
+                        <img src="images/vegetables.jpg">
+                        <p class="cat-prod-label">POTATOES</p>
+                    </div>
+                    <div class="cat-prod-item">
+                        <img src="images/juice.jpg">
+                        <p class="cat-prod-label">DRINKS</p>
+                    </div>
+                    <div class="cat-prod-item">
+                        <img src="images/meats.jpg">
+                        <p class="cat-prod-label">MEATS</p>
+                    </div>
+                </div>
+
+                <div class="featured-products">
+                    <h2 class="section-title">Featured Product</h2>
+                    <div class="featured-tabs">
+                        <a href="#" class="tab active">All</a>
+                        <a href="#" class="tab">Dried Fruit</a>
+                        <a href="#" class="tab">Fresh Meat</a>
+                        <a href="#" class="tab">Vegetables</a>
+                        <a href="#" class="tab">Fruits</a>
+                    </div>
+                    <div class="featured-product-grid">
+                        <div class="featured-item">
+                            <img src="images/meats.jpg">
+                            <p class="feat-prod-title">Meats</p>
+                            <p class="feat-prod-price">$300.00</p>
+                        </div>
+                        <div class="featured-item">
+                            <img src="images/dried_fruit.jpg">
+                            <p class="feat-prod-title">Dried Fruits</p>
+                            <p class="feat-prod-price">$50.00</p>
+                        </div>
+                        <div class="featured-item">
+                            <img src="images/guava.jpg">
+                            <!-- <img src="assets/feat-prod-guava-splash.png" alt="Splash Detail" class="splash-overlay"> -->
+                            <p class="feat-prod-title">Guavas</p>
+                            <p class="feat-prod-price">$20.00</p>
+                        </div>
+                        <div class="featured-item">
+                            <img src="images/watermelon.jpg">
+                            <p class="feat-prod-title">Watermelons</p>
+                            <p class="feat-prod-price">$30.00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
